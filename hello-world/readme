@@ -1,0 +1,13 @@
+
+Purpose: The Hello-World application simply uses the web-browser to print the statement hello world.
+
+Annotations Definitions:
+
+    @SpringBootApplication - Enable spring features like auto-configuration, component scan and other extra configuration.
+                            ( same as @Configuration @EnableAutoConfiguration @ComponentScan)
+
+    @RestController - Tells Spring to make an endpoint available over the web.
+
+    @GetMapping() - Tells Spring to use a method to answer any requests that get sent to your http://localhost:8080/hello address
+
+    @RequestParam - Telling Spring to expect a name value in the request, but if it’s not there, it will use the word “World” by default.
